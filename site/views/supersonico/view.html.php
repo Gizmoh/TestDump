@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
  *
  * @since  0.0.1
  */
-class aprformViewaprform extends JViewLegacy
+class aprformtestViewsupersonico extends JViewLegacy
 {
 	/**
 	 * Display the Hello World view
@@ -26,21 +26,6 @@ class aprformViewaprform extends JViewLegacy
 	 */
 	function display($tpl = null)
 	{
-		// Assign data to the views
-		$user =& JFactory::getUser();
-		$this ->userId = $user->id;
-		$model = $this->getModel();
-
-		$this ->aprs = $model->loadAprList($user->id);
-
-		// Check for errors.
-		if (count($errors = $this->get('Errors')))
-		{
-			JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
-
-			return false;
-		}
-
 		// Display the view
 		parent::display($tpl);
 	}

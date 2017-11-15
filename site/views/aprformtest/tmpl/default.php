@@ -93,7 +93,7 @@ function refreshData(){
     }
 
     jQuery.ajax({
-        url:"index.php?option=com_aprform&task=LoadData&format=json",
+        url:"index.php?option=com_aprformtest&task=LoadData&format=json",
         method:"POST",
         dataType:'json',
         data:{year: ago.options[ago.selectedIndex].value, month:mes.options[mes.selectedIndex].value, id:apr.options[apr.selectedIndex].value},
@@ -169,7 +169,7 @@ function saveData(){
     var dataJson=JSON.stringify(data);
     console.log(dataJson);
     jQuery.ajax({
-        url:"index.php?option=com_aprform&task=SaveData&format=json",
+        url:"index.php?option=com_aprformtest&task=SaveData&format=json",
         method:"POST",
         dataType:'json',
         data:{data:dataJson,year:agoS,month:mesS,id:aprS},

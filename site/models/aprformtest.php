@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
  *
  * @since  0.0.1
  */
-class aprformModelaprform extends JModelLegacy
+class aprformtestModelaprformtest extends JModelLegacy
 {
     
     public function loadAprList($id){

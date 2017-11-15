@@ -15,14 +15,14 @@ defined('_JEXEC') or die('Restricted access');
  *
  * @since  0.0.1
  */
-class aprformController extends JControllerLegacy
+class aprformtestController extends JControllerLegacy
 {
     function LoadData()
     {
         $year = JRequest::getVar('year');
         $month = JRequest::getVar('month');
         $id = JRequest::getVar('id');
-		$model = $this->getModel('aprform');
+		$model = $this->getModel('aprformtest');
         $this->dataz = $model->loadForm($year,$month,$id);
 
         echo json_encode($this->dataz);
@@ -37,7 +37,7 @@ class aprformController extends JControllerLegacy
         $data = json_decode($data, true);
         $id = JRequest::getVar('id');
 
-		$model = $this->getModel('aprform');
+		$model = $this->getModel('aprformtest');
         $this->dataz = $model->saveForm($year,$month,$id,$data);
 
         echo json_encode($data);
