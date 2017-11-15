@@ -43,5 +43,9 @@ class aprformtestController extends JControllerLegacy
         echo json_encode($data);
         
     }
+    function displaySupersonico(){
+        $view = $this->getView('supersonico','html');
+        $view->display();
+    }
 
 }

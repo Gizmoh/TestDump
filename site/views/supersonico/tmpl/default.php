@@ -7,10 +7,10 @@ JHtml::_('jquery.framework',false);
 
 ?>
 
-<h1> SUCK MA DICK!</h1>
+<h1> OH MAE WA MO SHIN DEIRU!</h1>
 <body>
     <div>
-        <p>
+        <p>NANI!?
         </p>
     </div>
 </body>

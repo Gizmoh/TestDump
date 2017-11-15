@@ -183,6 +183,7 @@ function saveData(){
 </script>
 <h1> APR Form </h1>
 <body onload=refreshData()>
+    <a href="index.php?option=com_aprformtest&view=supersonico">You are already dead!</a>
     <form action="" method="POST">
         <div>
         <fieldset>
